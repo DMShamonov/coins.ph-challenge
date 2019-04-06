@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`Menu\` component should render correctly with default props 1`] = `
+<nav>
+  <ul
+    className="menu"
+  >
+    <li>
+      <NavLink
+        activeClassName="menu__link_active"
+        className="menu__link"
+        to="/wallets"
+      >
+        <Icon
+          theme="btc-wallet"
+        />
+      </NavLink>
+    </li>
+  </ul>
+</nav>
+`;

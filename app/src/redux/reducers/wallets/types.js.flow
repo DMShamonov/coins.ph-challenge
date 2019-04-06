@@ -1,0 +1,12 @@
+// @flow
+
+import type { WalletsType } from 'types.js.flow';
+
+export type StateType = WalletsType;
+
+export type ActionType = {|
+  type: string,
+  payload: {
+    wallets: WalletsType,
+  },
+|};

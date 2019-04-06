@@ -1,17 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`\`Router\` component should render correctly with default props 1`] = `
-<BrowserRouter>
-  <Switch>
-    <Route
-      component={[Function]}
-      exact={true}
-      path="/sign-in"
-    />
-    <Connect(verifySession)
-      component={[Function]}
-      path="/"
-    />
-  </Switch>
-</BrowserRouter>
+<Switch>
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/sign-in"
+  />
+  <Connect(verifySession)
+    component={[Function]}
+    path="/"
+  />
+</Switch>
 `;

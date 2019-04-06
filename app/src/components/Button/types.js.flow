@@ -8,6 +8,9 @@ export type PropsType = {|
     | 'reset'
     | 'submit'
   ),
+  theme?: (
+    | 'shell'
+  ),
   disabled?: boolean,
   className?: string,
   children?: Node,

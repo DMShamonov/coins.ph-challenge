@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`PageHeader\` component should render correctly with \`className\` prop 1`] = `
+<header
+  className="page__header __CLASSNAME__"
+>
+  __CONTENT__
+</header>
+`;
+
+exports[`\`PageHeader\` component should render correctly with default props 1`] = `
+<header
+  className="page__header"
+>
+  __CONTENT__
+</header>
+`;

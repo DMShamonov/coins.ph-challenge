@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`Modal\` component should render correctly when \`isOpen\` prop is \`true\` 1`] = `
+<Modal
+  appElement={null}
+  ariaHideApp={true}
+  bodyOpenClassName="modal-is-open"
+  className="modal__dialog"
+  closeTimeoutMS={0}
+  contentLabel="__LABEL__"
+  isOpen={true}
+  onRequestClose={[MockFunction]}
+  overlayClassName="modal__overlay"
+  parentSelector={[Function]}
+  portalClassName="modal"
+  role="dialog"
+  shouldCloseOnEsc={true}
+  shouldCloseOnOverlayClick={true}
+  shouldFocusAfterRender={true}
+  shouldReturnFocusAfterClose={true}
+>
+  <Button
+    className="modal__close"
+    onClick={[MockFunction]}
+    theme="shell"
+  >
+    <Icon
+      theme="close"
+      title="Close"
+      width={18}
+    />
+  </Button>
+  <div
+    className="modal__content"
+  >
+    __CONTENT__
+  </div>
+</Modal>
+`;
+
+exports[`\`Modal\` component should render correctly when \`shouldCloseOnOverlayClick\` prop is \`true\` 1`] = `""`;
+
+exports[`\`Modal\` component should render correctly with \`className\` prop 1`] = `""`;
+
+exports[`\`Modal\` component should render correctly with default props 1`] = `""`;

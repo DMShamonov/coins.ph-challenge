@@ -7,6 +7,11 @@ export type PagePropsType = {|
   children: Node,
 |};
 
+export type PageHeaderPropsType = {|
+  className?: string,
+  children: Node,
+|};
+
 export type PageContentPropsType = {|
   className?: string,
   children: Node,

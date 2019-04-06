@@ -5,3 +5,11 @@ export type ProfileType = {|
   username: string,
   email: string,
 |};
+
+export type WalletType = {
+  id: string,
+  label: string,
+  balance: number,
+};
+
+export type WalletsType = Array<WalletType>;

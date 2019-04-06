@@ -1,0 +1,12 @@
+// @flow
+
+export type PropsType = {|
+  label: string,
+  passphrase: string,
+  error: string,
+  hasError: boolean,
+  isFormDisabled: boolean,
+  onLabelChange: SyntheticInputEvent<HTMLInputElement> => void,
+  onPassphraseChange: SyntheticInputEvent<HTMLInputElement> => void,
+  onSubmit: Event => void,
+|};

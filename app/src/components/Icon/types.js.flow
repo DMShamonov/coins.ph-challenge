@@ -1,0 +1,17 @@
+// @flow
+
+export type IconThemeType = (
+  | 'avatar-placeholder'
+  | 'btc'
+  | 'btc-wallet'
+  | 'close'
+  | 'logout'
+);
+
+export type PropsType = {|
+  theme: IconThemeType,
+  width?: number,
+  height?: number,
+  title?: string,
+  className?: string
+|}

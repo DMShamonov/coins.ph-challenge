@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`Avatar\` component should render correctly with \`avatar\` prop 1`] = `
+<div
+  className="avatar"
+>
+  <img
+    alt="avatar"
+    className="avatar__image"
+    height={48}
+    src="__PATH_TO_AVATAR__"
+    width={48}
+  />
+</div>
+`;
+
+exports[`\`Avatar\` component should render correctly with \`className\` prop 1`] = `
+<div
+  className="avatar __CLASSNAME__"
+>
+  <Icon
+    theme="avatar-placeholder"
+    width={48}
+  />
+</div>
+`;
+
+exports[`\`Avatar\` component should render correctly with default props 1`] = `
+<div
+  className="avatar"
+>
+  <Icon
+    theme="avatar-placeholder"
+    width={48}
+  />
+</div>
+`;

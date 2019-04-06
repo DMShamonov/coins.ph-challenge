@@ -10,8 +10,8 @@ export default function Page({
   children,
 }: PagePropsType): React.Node {
   return (
-    <div className={classnames('page', className)}>
+    <section className={classnames('page', className)}>
       {children}
-    </div>
+    </section>
   );
 }

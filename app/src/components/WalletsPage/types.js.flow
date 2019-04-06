@@ -1,0 +1,8 @@
+// @flow
+
+import type { WalletsType } from 'types.js.flow';
+
+export type PropsType = {|
+  wallets: WalletsType,
+  onOpenCreateWalletModal: () => void,
+|};

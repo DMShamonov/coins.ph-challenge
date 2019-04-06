@@ -7,12 +7,38 @@ exports[`\`Layout\` component should render correctly with default props 1`] = `
   <header
     className="app__header"
   >
-    Header
+    <Link
+      className="app__logo"
+      to="/"
+    >
+      <Icon
+        theme="btc"
+      />
+    </Link>
+    <Menu />
   </header>
   <main
     className="app__main"
   >
-    Main
+    <aside
+      className="app__aside"
+    >
+      <Connect(Account) />
+    </aside>
+    <div
+      className="app__content"
+    >
+      <Switch>
+        <Route
+          component={[Function]}
+          exact={true}
+          path="/wallets"
+        />
+        <Redirect
+          to="/wallets"
+        />
+      </Switch>
+    </div>
   </main>
 </div>
 `;

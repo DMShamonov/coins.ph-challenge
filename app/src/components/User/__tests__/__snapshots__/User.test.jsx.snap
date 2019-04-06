@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`User\` component should render correctly with \`avatar\` prop 1`] = `
+<section
+  className="user"
+>
+  <Avatar
+    avatar="__AVATAR__"
+    className="user__avatar"
+  />
+  <p
+    className="user__name"
+  >
+    __USER_NAME__
+  </p>
+</section>
+`;
+
+exports[`\`User\` component should render correctly with \`className\` prop 1`] = `
+<section
+  className="user __CLASSNAME__"
+>
+  <Avatar
+    avatar=""
+    className="user__avatar"
+  />
+  <p
+    className="user__name"
+  >
+    __USER_NAME__
+  </p>
+</section>
+`;
+
+exports[`\`User\` component should render correctly with default props 1`] = `
+<section
+  className="user"
+>
+  <Avatar
+    avatar=""
+    className="user__avatar"
+  />
+  <p
+    className="user__name"
+  >
+    __USER_NAME__
+  </p>
+</section>
+`;

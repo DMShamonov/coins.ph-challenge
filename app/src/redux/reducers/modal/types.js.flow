@@ -1,0 +1,10 @@
+// @flow
+
+export type StateType = ?string;
+
+export type ActionType = {|
+  type: string,
+  payload: {
+    modal: string,
+  },
+|};

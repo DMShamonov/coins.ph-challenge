@@ -8,6 +8,11 @@ export type FormPropsType = {|
   onSubmit?: Function,
 |};
 
+export type FormTitlePropsType = {|
+  className?: string,
+  children: Node,
+|};
+
 export type FormGroupPropsType = {|
   className?: string,
   children: Node,

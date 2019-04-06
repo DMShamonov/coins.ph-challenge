@@ -1,0 +1,7 @@
+// @flow
+
+export type PropsType = {|
+  name: string,
+  avatar?: string,
+  className?: string,
+|};

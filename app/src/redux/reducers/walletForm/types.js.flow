@@ -1,0 +1,17 @@
+// @flow
+
+export type StateType = {|
+  label: string,
+  passphrase: string,
+  error: string,
+  isProcessing: boolean,
+|};
+
+export type ActionType = {|
+  type: string,
+  payload?: {
+    label?: string,
+    passphrase?: string,
+  },
+  error?: string,
+|};

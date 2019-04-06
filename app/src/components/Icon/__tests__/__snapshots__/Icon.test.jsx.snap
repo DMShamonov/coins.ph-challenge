@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`Icon\` component should render correctly with \`className\` prop 1`] = `
+<span
+  className="icon icon_theme_avatar-placeholder __CLASSNAME__"
+  style={
+    Object {
+      "backgroundSize": undefined,
+      "height": undefined,
+      "width": undefined,
+    }
+  }
+/>
+`;
+
+exports[`\`Icon\` component should render correctly with \`height\` prop 1`] = `
+<span
+  className="icon icon_theme_avatar-placeholder"
+  style={
+    Object {
+      "backgroundSize": "48px 48px",
+      "height": 48,
+      "width": 48,
+    }
+  }
+/>
+`;
+
+exports[`\`Icon\` component should render correctly with \`width\` prop 1`] = `
+<span
+  className="icon icon_theme_avatar-placeholder"
+  style={
+    Object {
+      "backgroundSize": "48px 48px",
+      "height": 48,
+      "width": 48,
+    }
+  }
+/>
+`;
+
+exports[`\`Icon\` component should render correctly with both \`width\` and \`height\` props 1`] = `
+<span
+  className="icon icon_theme_avatar-placeholder"
+  style={
+    Object {
+      "backgroundSize": "48px 48px",
+      "height": 48,
+      "width": 48,
+    }
+  }
+/>
+`;
+
+exports[`\`Icon\` component should render correctly with default props 1`] = `
+<span
+  className="icon icon_theme_avatar-placeholder"
+  style={
+    Object {
+      "backgroundSize": undefined,
+      "height": undefined,
+      "width": undefined,
+    }
+  }
+/>
+`;

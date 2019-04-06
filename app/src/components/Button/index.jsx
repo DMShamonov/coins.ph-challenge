@@ -9,6 +9,7 @@ import type { PropsType } from './types.js.flow';
 
 export default function Button({
   type = 'button',
+  theme,
   disabled,
   className,
   children,
@@ -18,7 +19,9 @@ export default function Button({
     <button
       type={type}
       disabled={disabled}
-      className={classnames('button', className)}
+      className={classnames('button', {
+        [`button_theme_${(theme: any)}`]: theme,
+      }, className)}
       onClick={onClick}
     >
       {children}

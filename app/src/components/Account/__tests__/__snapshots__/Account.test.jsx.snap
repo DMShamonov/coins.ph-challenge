@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`Account\` component should render correctly with \`avatar\` prop 1`] = `
+<div
+  className="account"
+>
+  <User
+    avatar="__AVATAR__"
+    className="account__user"
+    name="__USER_NAME__"
+  />
+  <Button
+    className="account__logout"
+    onClick={[MockFunction]}
+    theme="shell"
+  >
+    <Icon
+      theme="logout"
+      title="Logout"
+      width={24}
+    />
+  </Button>
+</div>
+`;
+
+exports[`\`Account\` component should render correctly with default props 1`] = `
+<div
+  className="account"
+>
+  <User
+    avatar=""
+    className="account__user"
+    name="__USER_NAME__"
+  />
+  <Button
+    className="account__logout"
+    onClick={[MockFunction]}
+    theme="shell"
+  >
+    <Icon
+      theme="logout"
+      title="Logout"
+      width={24}
+    />
+  </Button>
+</div>
+`;
