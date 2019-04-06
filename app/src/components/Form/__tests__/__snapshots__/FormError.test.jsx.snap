@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`FormError\` component should render correctly with \`className\` prop 1`] = `
+<p
+  className="form__error __CLASSNAME__"
+>
+  __CONTENT__
+</p>
+`;
+
+exports[`\`FormError\` component should render correctly with default props 1`] = `
+<p
+  className="form__error"
+>
+  __CONTENT__
+</p>
+`;

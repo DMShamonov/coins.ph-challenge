@@ -1,0 +1,10 @@
+# Indexes
+/.idea/
+/.DS_Store
+
+# Vendors
+/node_modules/
+
+# Application compiled sources
+/dist/
+/.cache-loader/

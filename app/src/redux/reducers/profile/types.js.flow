@@ -1,0 +1,12 @@
+// @flow
+
+import type { ProfileType } from 'types.js.flow';
+
+export type StateType = ?ProfileType;
+
+export type ActionType = {|
+  type: string,
+  payload: {|
+    profile: ProfileType,
+  |},
+|};

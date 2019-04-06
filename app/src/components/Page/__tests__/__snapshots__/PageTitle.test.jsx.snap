@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`PageTitle\` component should render correctly with \`className\` prop 1`] = `
+<h1
+  className="page__title __CLASSNAME__"
+>
+  __CONTENT__
+</h1>
+`;
+
+exports[`\`PageTitle\` component should render correctly with default props 1`] = `
+<h1
+  className="page__title"
+>
+  __CONTENT__
+</h1>
+`;

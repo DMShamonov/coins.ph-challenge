@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`Loader\` component should render correctly with default props 1`] = `
+<svg
+  className="loader"
+  viewBox="0 0 50 50"
+>
+  <circle
+    className="path"
+    cx="25"
+    cy="25"
+    fill="none"
+    r="20"
+    strokeWidth="5"
+  />
+</svg>
+`;

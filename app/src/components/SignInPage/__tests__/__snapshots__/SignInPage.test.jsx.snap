@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`SignInPage\` component should render correctly when \`hasError\` prop is \`true\` and \`error\` prop has value 1`] = `
+<div
+  className="sign-in"
+>
+  <div
+    className="sign-in__content"
+  >
+    <h1
+      className="sign-in__title"
+    >
+      Sign in to BitGo account
+    </h1>
+    <Form
+      onSubmit={[MockFunction]}
+    >
+      <FormGroup>
+        <Input
+          autoFocus={true}
+          label="Login"
+          name="login"
+          onChange={[MockFunction]}
+          placeholder="Enter your BitGo login"
+          required={true}
+          type="email"
+          value=""
+        />
+      </FormGroup>
+      <FormGroup>
+        <Input
+          autoComplete="off"
+          label="Password"
+          name="password"
+          onChange={[MockFunction]}
+          placeholder="Enter your BitGo password"
+          required={true}
+          type="password"
+          value=""
+        />
+      </FormGroup>
+      <FormError>
+        __ERROR__
+      </FormError>
+      <Button
+        disabled={false}
+        type="submit"
+      >
+        Sign in
+      </Button>
+    </Form>
+  </div>
+</div>
+`;
+
+exports[`\`SignInPage\` component should render correctly when \`isFormDisabled\` prop is \`true\` 1`] = `
+<div
+  className="sign-in"
+>
+  <div
+    className="sign-in__content"
+  >
+    <h1
+      className="sign-in__title"
+    >
+      Sign in to BitGo account
+    </h1>
+    <Form
+      onSubmit={[MockFunction]}
+    >
+      <FormGroup>
+        <Input
+          autoFocus={true}
+          label="Login"
+          name="login"
+          onChange={[MockFunction]}
+          placeholder="Enter your BitGo login"
+          required={true}
+          type="email"
+          value=""
+        />
+      </FormGroup>
+      <FormGroup>
+        <Input
+          autoComplete="off"
+          label="Password"
+          name="password"
+          onChange={[MockFunction]}
+          placeholder="Enter your BitGo password"
+          required={true}
+          type="password"
+          value=""
+        />
+      </FormGroup>
+      <Button
+        disabled={true}
+        type="submit"
+      >
+        Sign in
+      </Button>
+    </Form>
+  </div>
+</div>
+`;
+
+exports[`\`SignInPage\` component should render correctly when \`isLogged\` prop is \`true\` 1`] = `
+<Redirect
+  to={
+    Object {
+      "pathname": "/",
+    }
+  }
+/>
+`;
+
+exports[`\`SignInPage\` component should render correctly with default props 1`] = `
+<div
+  className="sign-in"
+>
+  <div
+    className="sign-in__content"
+  >
+    <h1
+      className="sign-in__title"
+    >
+      Sign in to BitGo account
+    </h1>
+    <Form
+      onSubmit={[MockFunction]}
+    >
+      <FormGroup>
+        <Input
+          autoFocus={true}
+          label="Login"
+          name="login"
+          onChange={[MockFunction]}
+          placeholder="Enter your BitGo login"
+          required={true}
+          type="email"
+          value=""
+        />
+      </FormGroup>
+      <FormGroup>
+        <Input
+          autoComplete="off"
+          label="Password"
+          name="password"
+          onChange={[MockFunction]}
+          placeholder="Enter your BitGo password"
+          required={true}
+          type="password"
+          value=""
+        />
+      </FormGroup>
+      <Button
+        disabled={false}
+        type="submit"
+      >
+        Sign in
+      </Button>
+    </Form>
+  </div>
+</div>
+`;

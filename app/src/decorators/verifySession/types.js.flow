@@ -1,0 +1,13 @@
+// @flow
+
+import type { ProfileType } from 'types.js.flow';
+
+export type PropsType = {
+  isProfileExist: boolean,
+  onSetProfile: ProfileType => void,
+  onLogout: () => void
+};
+
+export type StateType = {|
+  isLogged: ?boolean,
+|};

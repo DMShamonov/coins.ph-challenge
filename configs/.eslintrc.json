@@ -1,0 +1,26 @@
+{
+  "plugins": ["flowtype"],
+  "extends": [
+    "airbnb",
+    "plugin:flowtype/recommended",
+    "plugin:jest/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "settings": {
+    "import/resolver": {
+      "babel-module": [
+        "./app",
+        "./app/src"
+      ]
+    }
+  },
+  "rules": {
+    "camelcase": ["error", {"ignoreDestructuring": true}],
+    "jsx-a11y/no-autofocus": "off",
+    "no-underscore-dangle": "off"
+  }
+}

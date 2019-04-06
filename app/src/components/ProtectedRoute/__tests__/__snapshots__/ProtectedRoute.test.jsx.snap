@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`ProtectedRoute\` component should render correctly when \`exact\` prop is \`true\` 1`] = `
+<Route
+  exact={true}
+  path="__PATH__"
+  render={[Function]}
+/>
+`;
+
+exports[`\`ProtectedRoute\` component should render correctly when \`isLogged\` prop is \`true\` 1`] = `
+<Route
+  exact={false}
+  path="__PATH__"
+  render={[Function]}
+/>
+`;
+
+exports[`\`ProtectedRoute\` component should render correctly with default props 1`] = `
+<Route
+  exact={false}
+  path="__PATH__"
+  render={[Function]}
+/>
+`;

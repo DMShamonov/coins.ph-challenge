@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`FormGroup\` component should render correctly with \`className\` prop 1`] = `
+<div
+  className="form__group __CLASSNAME__"
+>
+  __CONTENT__
+</div>
+`;
+
+exports[`\`FormGroup\` component should render correctly with default props 1`] = `
+<div
+  className="form__group"
+>
+  __CONTENT__
+</div>
+`;

@@ -1,0 +1,19 @@
+// @flow
+
+import type { Node } from 'react';
+
+export type FormPropsType = {|
+  className?: string,
+  children: Node,
+  onSubmit?: Function,
+|};
+
+export type FormGroupPropsType = {|
+  className?: string,
+  children: Node,
+|};
+
+export type FormErrorPropsType = {|
+  className?: string,
+  children: Node,
+|};

@@ -1,0 +1,17 @@
+// @flow
+
+export type StateType = {|
+  login: string,
+  password: string,
+  error: string,
+  isProcessing: boolean,
+|};
+
+export type ActionType = {|
+  type: string,
+  payload?: {
+    login?: string,
+    password?: string,
+  },
+  error?: string,
+|};

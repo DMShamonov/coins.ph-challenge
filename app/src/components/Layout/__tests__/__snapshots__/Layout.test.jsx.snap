@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`Layout\` component should render correctly with default props 1`] = `
+<div
+  className="app"
+>
+  <header
+    className="app__header"
+  >
+    Header
+  </header>
+  <main
+    className="app__main"
+  >
+    Main
+  </main>
+</div>
+`;

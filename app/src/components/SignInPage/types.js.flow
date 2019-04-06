@@ -1,0 +1,13 @@
+// @flow
+
+export type PropsType = {|
+  isLogged: boolean,
+  login: string,
+  password: string,
+  error: string,
+  hasError: boolean,
+  isFormDisabled: boolean,
+  onChangeLogin: SyntheticInputEvent<HTMLInputElement> => void,
+  onChangePassword: SyntheticInputEvent<HTMLInputElement> => void,
+  onSubmit: Event => void,
+|};

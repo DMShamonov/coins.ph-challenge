@@ -1,0 +1,15 @@
+// @flow
+
+import type { Node } from 'react';
+
+export type PropsType = {|
+  type?: (
+    | 'button'
+    | 'reset'
+    | 'submit'
+  ),
+  disabled?: boolean,
+  className?: string,
+  children?: Node,
+  onClick?: Event => void,
+|};

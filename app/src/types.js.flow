@@ -1,0 +1,7 @@
+// @flow
+
+export type ProfileType = {|
+  name: string,
+  username: string,
+  email: string,
+|};

@@ -1,0 +1,291 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`Input\` component should render correctly when \`autoComplete\` prop is \`off\` 1`] = `
+<div
+  className="input"
+>
+  <label
+    htmlFor="8"
+  >
+    <span
+      className="input__label"
+    />
+    <input
+      autoComplete="off"
+      className="input__field"
+      id="8"
+      type="text"
+    />
+  </label>
+</div>
+`;
+
+exports[`\`Input\` component should render correctly when \`autoFocus\` prop is \`true\` 1`] = `
+<div
+  className="input"
+>
+  <label
+    htmlFor="7"
+  >
+    <span
+      className="input__label"
+    />
+    <input
+      autoComplete="on"
+      autoFocus={true}
+      className="input__field"
+      id="7"
+      type="text"
+    />
+  </label>
+</div>
+`;
+
+exports[`\`Input\` component should render correctly when \`disabled\` prop is \`true\` 1`] = `
+<div
+  className="input"
+>
+  <label
+    htmlFor="10"
+  >
+    <span
+      className="input__label"
+    />
+    <input
+      autoComplete="on"
+      className="input__field"
+      disabled={true}
+      id="10"
+      type="text"
+    />
+  </label>
+</div>
+`;
+
+exports[`\`Input\` component should render correctly when \`required\` prop is \`true\` 1`] = `
+<div
+  className="input"
+>
+  <label
+    htmlFor="9"
+  >
+    <span
+      className="input__label"
+    />
+    <input
+      autoComplete="on"
+      className="input__field"
+      id="9"
+      required={true}
+      type="text"
+    />
+  </label>
+</div>
+`;
+
+exports[`\`Input\` component should render correctly when \`type\` prop is \`number\` 1`] = `
+<div
+  className="input"
+>
+  <label
+    htmlFor="2"
+  >
+    <span
+      className="input__label"
+    />
+    <input
+      autoComplete="on"
+      className="input__field"
+      id="2"
+      type="number"
+    />
+  </label>
+</div>
+`;
+
+exports[`\`Input\` component should render correctly with \`className\` prop 1`] = `
+<div
+  className="input __CLASSNAME__"
+>
+  <label
+    htmlFor="11"
+  >
+    <span
+      className="input__label"
+    />
+    <input
+      autoComplete="on"
+      className="input__field"
+      id="11"
+      type="text"
+    />
+  </label>
+</div>
+`;
+
+exports[`\`Input\` component should render correctly with \`defaultValue\` prop 1`] = `
+<div
+  className="input"
+>
+  <label
+    htmlFor="6"
+  >
+    <span
+      className="input__label"
+    />
+    <input
+      autoComplete="on"
+      className="input__field"
+      defaultValue="__DEFAULT_VALUE__"
+      id="6"
+      type="text"
+    />
+  </label>
+</div>
+`;
+
+exports[`\`Input\` component should render correctly with \`id\` prop 1`] = `
+<div
+  className="input"
+>
+  <label
+    htmlFor="__ID__"
+  >
+    <span
+      className="input__label"
+    />
+    <input
+      autoComplete="on"
+      className="input__field"
+      id="__ID__"
+      type="text"
+    />
+  </label>
+</div>
+`;
+
+exports[`\`Input\` component should render correctly with \`label\` prop 1`] = `
+<div
+  className="input"
+>
+  <label
+    htmlFor="3"
+  >
+    <span
+      className="input__label"
+    >
+      __LABEL__
+    </span>
+    <input
+      autoComplete="on"
+      className="input__field"
+      id="3"
+      type="text"
+    />
+  </label>
+</div>
+`;
+
+exports[`\`Input\` component should render correctly with \`name\` prop 1`] = `
+<div
+  className="input"
+>
+  <label
+    htmlFor="__NAME__"
+  >
+    <span
+      className="input__label"
+    />
+    <input
+      autoComplete="on"
+      className="input__field"
+      id="__NAME__"
+      name="__NAME__"
+      type="text"
+    />
+  </label>
+</div>
+`;
+
+exports[`\`Input\` component should render correctly with \`onChange\` prop 1`] = `
+<div
+  className="input"
+>
+  <label
+    htmlFor="12"
+  >
+    <span
+      className="input__label"
+    />
+    <input
+      autoComplete="on"
+      className="input__field"
+      id="12"
+      onChange={[MockFunction]}
+      type="text"
+    />
+  </label>
+</div>
+`;
+
+exports[`\`Input\` component should render correctly with \`placeholder\` prop 1`] = `
+<div
+  className="input"
+>
+  <label
+    htmlFor="4"
+  >
+    <span
+      className="input__label"
+    />
+    <input
+      autoComplete="on"
+      className="input__field"
+      id="4"
+      placeholder="__PLACEHOLDER__"
+      type="text"
+    />
+  </label>
+</div>
+`;
+
+exports[`\`Input\` component should render correctly with \`value\` prop 1`] = `
+<div
+  className="input"
+>
+  <label
+    htmlFor="5"
+  >
+    <span
+      className="input__label"
+    />
+    <input
+      autoComplete="on"
+      className="input__field"
+      id="5"
+      type="text"
+      value="__VALUE__"
+    />
+  </label>
+</div>
+`;
+
+exports[`\`Input\` component should render correctly with default props 1`] = `
+<div
+  className="input"
+>
+  <label
+    htmlFor="1"
+  >
+    <span
+      className="input__label"
+    />
+    <input
+      autoComplete="on"
+      className="input__field"
+      id="1"
+      type="text"
+    />
+  </label>
+</div>
+`;

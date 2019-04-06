@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`Button\` component should render correctly when \`disabled\` prop is \`true\` 1`] = `
+<button
+  className="button"
+  disabled={true}
+  type="button"
+/>
+`;
+
+exports[`\`Button\` component should render correctly when \`type\` prop is \`submit\` 1`] = `
+<button
+  className="button"
+  type="submit"
+/>
+`;
+
+exports[`\`Button\` component should render correctly with \`children\` prop 1`] = `
+<button
+  className="button"
+  type="button"
+>
+  __CONTENT__
+</button>
+`;
+
+exports[`\`Button\` component should render correctly with \`className\` prop 1`] = `
+<button
+  className="button __CLASSNAME__"
+  type="button"
+/>
+`;
+
+exports[`\`Button\` component should render correctly with \`onClick\` prop 1`] = `
+<button
+  className="button"
+  onClick={[MockFunction]}
+  type="button"
+/>
+`;
+
+exports[`\`Button\` component should render correctly with default props 1`] = `
+<button
+  className="button"
+  type="button"
+/>
+`;

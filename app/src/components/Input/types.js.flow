@@ -1,0 +1,24 @@
+// @flow
+
+export type PropsType = {|
+  id?: string,
+  type?: (
+    | 'text'
+    | 'email'
+    | 'password'
+  ),
+  name?: string,
+  label?: string,
+  placeholder?: string,
+  value?: string,
+  defaultValue?: string,
+  autoFocus?: boolean,
+  autoComplete?: (
+    | 'off'
+    | 'on'
+  ),
+  required?: boolean,
+  disabled?: boolean,
+  className?: string,
+  onChange?: SyntheticInputEvent<HTMLInputElement> => void,
+|}
