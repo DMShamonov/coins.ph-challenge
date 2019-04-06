@@ -2,7 +2,7 @@
 
 const path = require('path');
 const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const UglifyjsWebpackPlugin = require('uglifyjs-webpack-plugin');
 const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
 const CleanWebpackPlugin = require('clean-webpack-plugin');
@@ -22,6 +22,7 @@ module.exports = (options) => {
   const OUTPUT_PATH = path.join(ROOT_PATH, '/dist');
 
   return {
+    mode: ENVIRONMENT,
     bail: true,
     devServer: IS_DEVELOPMENT_MODE ? require('./webpack.devserver.config') : undefined,
     devtool: IS_DEBUG_MODE ? 'inline-cheap-module-source-map' : undefined,
@@ -84,38 +85,31 @@ module.exports = (options) => {
         },
         {
           test: /\.(css|sass)$/,
-          use: ExtractTextPlugin.extract({
-            fallback: {
-              loader: 'style-loader',
+          use: [
+            IS_DEVELOPMENT_MODE ? 'style-loader' : MiniCssExtractPlugin.loader,
+            {
+              loader: 'css-loader',
               options: {
-                hmr: IS_DEVELOPMENT_MODE,
+                importLoaders: 2,
+                sourceMap: IS_DEBUG_MODE,
               },
             },
-            use: [
-              {
-                loader: 'css-loader',
-                options: {
-                  importLoaders: 2,
-                  sourceMap: IS_DEBUG_MODE,
+            {
+              loader: 'postcss-loader',
+              options: {
+                sourceMap: IS_DEBUG_MODE,
+                config: {
+                  path: POSTCSS_CONFIG,
                 },
               },
-              {
-                loader: 'postcss-loader',
-                options: {
-                  sourceMap: IS_DEBUG_MODE,
-                  config: {
-                    path: POSTCSS_CONFIG,
-                  },
-                },
+            },
+            {
+              loader: 'sass-loader',
+              options: {
+                sourceMap: IS_DEBUG_MODE,
               },
-              {
-                loader: 'sass-loader',
-                options: {
-                  sourceMap: IS_DEBUG_MODE,
-                },
-              },
-            ],
-          }),
+            },
+          ],
         },
         {
           test: /\.(png|jpe?g)$/,
@@ -159,28 +153,28 @@ module.exports = (options) => {
         },
       ],
     },
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          styles: {
+            name: 'styles',
+            test: /\.css$/,
+            chunks: 'all',
+            enforce: true,
+          },
+        },
+      },
+    },
     plugins: [
       new webpack.EnvironmentPlugin({
         BABEL_ENV: ENVIRONMENT,
         NODE_ENV: ENVIRONMENT,
       }),
-      new ExtractTextPlugin({
-        filename: '[name].[contenthash].css',
-        allChunks: true,
-        disable: IS_DEVELOPMENT_MODE,
+      new MiniCssExtractPlugin({
+        filename: IS_DEVELOPMENT_MODE ? '[name].css' : '[name].[hash].css',
+        chunkFilename: IS_DEVELOPMENT_MODE ? '[id].css' : '[id].[hash].css',
       }),
       new webpack.ContextReplacementPlugin(/moment[/\\]locale/, /(en-gb|ru)/),
-      new webpack.optimize.CommonsChunkPlugin({
-        name: 'vendor',
-        filename: 'vendor.[chunkhash].js',
-        minChunks: module => (module.context && module.context.includes('node_modules')),
-      }),
-      new webpack.optimize.CommonsChunkPlugin({
-        name: 'manifest',
-        filename: 'manifest.[hash].js',
-        minChunks: Infinity,
-      }),
-      IS_DEVELOPMENT_MODE && new webpack.NamedModulesPlugin(),
       !IS_DEVELOPMENT_MODE && new UglifyjsWebpackPlugin({
         parallel: true,
         cache: true,
