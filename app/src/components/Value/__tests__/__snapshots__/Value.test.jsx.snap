@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`Value\` component should render correctly when \`value\` prop is negative 1`] = `
+<p
+  className="value value_is_negative"
+>
+  -10
+</p>
+`;
+
+exports[`\`Value\` component should render correctly when \`value\` prop is positive 1`] = `
+<p
+  className="value value_is_positive"
+>
+  10
+</p>
+`;
+
+exports[`\`Value\` component should render correctly with default props 1`] = `
+<p
+  className="value"
+>
+  0
+</p>
+`;

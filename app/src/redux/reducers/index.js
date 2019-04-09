@@ -7,6 +7,7 @@ import profile from './profile';
 import signInForm from './signInForm';
 import walletForm from './walletForm';
 import wallets from './wallets';
+import walletTransactions from './walletTransactions';
 
 const appReducer = combineReducers({
   common: combineReducers({
@@ -14,6 +15,7 @@ const appReducer = combineReducers({
   }),
   data: combineReducers({
     wallets,
+    walletTransactions,
   }),
   ui: combineReducers({
     modal,

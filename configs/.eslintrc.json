@@ -19,7 +19,7 @@
     }
   },
   "rules": {
-    "camelcase": ["error", {"ignoreDestructuring": true}],
+    "camelcase": "off",
     "jsx-a11y/no-autofocus": "off",
     "no-underscore-dangle": "off"
   }

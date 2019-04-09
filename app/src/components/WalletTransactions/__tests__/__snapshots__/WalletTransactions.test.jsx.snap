@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`WalletTransaction\` component should render correctly when \`walletTransactions\` prop is empty array 1`] = `
+<Table>
+  <TableHeader>
+    <TableRow>
+      <TableCell>
+        Date
+      </TableCell>
+      <TableCell
+        width="10%"
+      >
+        Fee
+      </TableCell>
+      <TableCell
+        width="10%"
+      >
+        Value
+      </TableCell>
+      <TableCell
+        width="10%"
+      >
+        Status
+      </TableCell>
+    </TableRow>
+  </TableHeader>
+  <TableBody />
+</Table>
+`;
+
+exports[`\`WalletTransaction\` component should render correctly with default props 1`] = `
+<Table>
+  <TableHeader>
+    <TableRow>
+      <TableCell>
+        Date
+      </TableCell>
+      <TableCell
+        width="10%"
+      >
+        Fee
+      </TableCell>
+      <TableCell
+        width="10%"
+      >
+        Value
+      </TableCell>
+      <TableCell
+        width="10%"
+      >
+        Status
+      </TableCell>
+    </TableRow>
+  </TableHeader>
+  <TableBody>
+    <WalletTransaction
+      date="2019-04-09T02:56:04.152Z"
+      fee={1000}
+      key="__ID__"
+      pending={false}
+      value={100000000}
+    />
+  </TableBody>
+</Table>
+`;

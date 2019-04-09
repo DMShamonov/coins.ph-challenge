@@ -34,6 +34,11 @@ exports[`\`Layout\` component should render correctly with default props 1`] = `
           exact={true}
           path="/wallets"
         />
+        <Route
+          component={[Function]}
+          exact={true}
+          path="/wallets/:id/transactions"
+        />
         <Redirect
           to="/wallets"
         />

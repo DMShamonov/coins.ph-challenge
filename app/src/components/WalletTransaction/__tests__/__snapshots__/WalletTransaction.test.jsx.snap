@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`WalletTransaction\` component should render correctly when \`pending\` prop is \`true\` 1`] = `
+<TableRow>
+  <TableCell>
+    2019-04-09T02:56:04.152Z
+  </TableCell>
+  <TableCell
+    width="10%"
+  >
+    1000
+  </TableCell>
+  <TableCell
+    width="10%"
+  >
+    <Value
+      value={1}
+    />
+  </TableCell>
+  <TableCell>
+    pending...
+  </TableCell>
+</TableRow>
+`;
+
+exports[`\`WalletTransaction\` component should render correctly with default props 1`] = `
+<TableRow>
+  <TableCell>
+    2019-04-09T02:56:04.152Z
+  </TableCell>
+  <TableCell
+    width="10%"
+  >
+    1000
+  </TableCell>
+  <TableCell
+    width="10%"
+  >
+    <Value
+      value={1}
+    />
+  </TableCell>
+  <TableCell>
+    success
+  </TableCell>
+</TableRow>
+`;

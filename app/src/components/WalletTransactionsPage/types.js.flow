@@ -1,0 +1,8 @@
+// @flow
+
+import type { WalletType, WalletTransactionsType } from 'types.js.flow';
+
+export type PropsType = {
+  wallet: WalletType,
+  walletTransactions: WalletTransactionsType,
+};

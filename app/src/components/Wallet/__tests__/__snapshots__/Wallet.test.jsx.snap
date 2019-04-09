@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`Wallet\` component should render correctly with default props 1`] = `
+<TableRow>
+  <TableCell>
+    <Link
+      to="/wallets/__ID__/transactions"
+    >
+      __ID__
+    </Link>
+  </TableCell>
+  <TableCell>
+    __LABEL__
+  </TableCell>
+  <TableCell
+    width="10%"
+  >
+    <Value
+      value={1}
+    />
+  </TableCell>
+</TableRow>
+`;

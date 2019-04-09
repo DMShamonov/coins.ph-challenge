@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`TableCell\` component should render correctly with \`children\` prop 1`] = `
+<div
+  className="table__cell"
+  style={
+    Object {
+      "width": undefined,
+    }
+  }
+>
+  __CONTENT__
+</div>
+`;
+
+exports[`\`TableCell\` component should render correctly with \`className\` prop 1`] = `
+<div
+  className="table__cell __CLASSNAME__"
+  style={
+    Object {
+      "width": undefined,
+    }
+  }
+>
+  __CONTENT__
+</div>
+`;
+
+exports[`\`TableCell\` component should render correctly with \`width\` prop 1`] = `
+<div
+  className="table__cell"
+  style={
+    Object {
+      "width": "10%",
+    }
+  }
+>
+  __CONTENT__
+</div>
+`;
+
+exports[`\`TableCell\` component should render correctly with default props 1`] = `
+<div
+  className="table__cell"
+  style={
+    Object {
+      "width": undefined,
+    }
+  }
+/>
+`;

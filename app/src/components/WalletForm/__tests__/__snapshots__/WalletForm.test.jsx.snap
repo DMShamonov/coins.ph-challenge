@@ -1,0 +1,190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`WalletForm\` component should render correctly when \`error\` prop is set 1`] = `
+<Form
+  onSubmit={[MockFunction]}
+>
+  <FormTitle>
+    Create wallet
+  </FormTitle>
+  <FormGroup>
+    <Input
+      label="Label"
+      name="label"
+      onChange={[MockFunction]}
+      placeholder="Enter wallet label"
+      required={true}
+      value="__LABEL__"
+    />
+  </FormGroup>
+  <FormGroup>
+    <Input
+      label="Passphrase"
+      name="passphrase"
+      onChange={[MockFunction]}
+      placeholder="Enter passphrase to encrypt wallet"
+      required={true}
+      type="password"
+      value="__PASSPHRASE__"
+    />
+  </FormGroup>
+  <Button
+    disabled={false}
+    type="submit"
+  >
+    Create wallet
+  </Button>
+</Form>
+`;
+
+exports[`\`WalletForm\` component should render correctly when \`error\` prop is set and \`hasError\` prop is \`true\` 1`] = `
+<Form
+  onSubmit={[MockFunction]}
+>
+  <FormTitle>
+    Create wallet
+  </FormTitle>
+  <FormGroup>
+    <Input
+      label="Label"
+      name="label"
+      onChange={[MockFunction]}
+      placeholder="Enter wallet label"
+      required={true}
+      value="__LABEL__"
+    />
+  </FormGroup>
+  <FormGroup>
+    <Input
+      label="Passphrase"
+      name="passphrase"
+      onChange={[MockFunction]}
+      placeholder="Enter passphrase to encrypt wallet"
+      required={true}
+      type="password"
+      value="__PASSPHRASE__"
+    />
+  </FormGroup>
+  <FormError>
+    __ERROR__
+  </FormError>
+  <Button
+    disabled={false}
+    type="submit"
+  >
+    Create wallet
+  </Button>
+</Form>
+`;
+
+exports[`\`WalletForm\` component should render correctly when \`hasError\` prop is \`true\` 1`] = `
+<Form
+  onSubmit={[MockFunction]}
+>
+  <FormTitle>
+    Create wallet
+  </FormTitle>
+  <FormGroup>
+    <Input
+      label="Label"
+      name="label"
+      onChange={[MockFunction]}
+      placeholder="Enter wallet label"
+      required={true}
+      value="__LABEL__"
+    />
+  </FormGroup>
+  <FormGroup>
+    <Input
+      label="Passphrase"
+      name="passphrase"
+      onChange={[MockFunction]}
+      placeholder="Enter passphrase to encrypt wallet"
+      required={true}
+      type="password"
+      value="__PASSPHRASE__"
+    />
+  </FormGroup>
+  <FormError />
+  <Button
+    disabled={false}
+    type="submit"
+  >
+    Create wallet
+  </Button>
+</Form>
+`;
+
+exports[`\`WalletForm\` component should render correctly when \`isFormDisabled\` prop is \`true\` 1`] = `
+<Form
+  onSubmit={[MockFunction]}
+>
+  <FormTitle>
+    Create wallet
+  </FormTitle>
+  <FormGroup>
+    <Input
+      label="Label"
+      name="label"
+      onChange={[MockFunction]}
+      placeholder="Enter wallet label"
+      required={true}
+      value="__LABEL__"
+    />
+  </FormGroup>
+  <FormGroup>
+    <Input
+      label="Passphrase"
+      name="passphrase"
+      onChange={[MockFunction]}
+      placeholder="Enter passphrase to encrypt wallet"
+      required={true}
+      type="password"
+      value="__PASSPHRASE__"
+    />
+  </FormGroup>
+  <Button
+    disabled={true}
+    type="submit"
+  >
+    Create wallet
+  </Button>
+</Form>
+`;
+
+exports[`\`WalletForm\` component should render correctly with default props 1`] = `
+<Form
+  onSubmit={[MockFunction]}
+>
+  <FormTitle>
+    Create wallet
+  </FormTitle>
+  <FormGroup>
+    <Input
+      label="Label"
+      name="label"
+      onChange={[MockFunction]}
+      placeholder="Enter wallet label"
+      required={true}
+      value="__LABEL__"
+    />
+  </FormGroup>
+  <FormGroup>
+    <Input
+      label="Passphrase"
+      name="passphrase"
+      onChange={[MockFunction]}
+      placeholder="Enter passphrase to encrypt wallet"
+      required={true}
+      type="password"
+      value="__PASSPHRASE__"
+    />
+  </FormGroup>
+  <Button
+    disabled={false}
+    type="submit"
+  >
+    Create wallet
+  </Button>
+</Form>
+`;

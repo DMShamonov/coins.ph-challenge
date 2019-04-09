@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`WalletCreateModal\` component should render correctly when \`isOpen\` prop is \`true\` 1`] = `
+<Modal
+  contentLabel="Create wallet"
+  isOpen={true}
+  onClose={[MockFunction]}
+>
+  <Connect(WalletForm) />
+</Modal>
+`;
+
+exports[`\`WalletCreateModal\` component should render correctly with default props 1`] = `
+<Modal
+  contentLabel="Create wallet"
+  isOpen={false}
+  onClose={[MockFunction]}
+>
+  <Connect(WalletForm) />
+</Modal>
+`;

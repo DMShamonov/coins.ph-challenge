@@ -8,6 +8,8 @@ import {
   PageContent,
   PageTitle,
 } from 'components/Page';
+import Flex from 'components/Flex';
+import Total from 'components/Total';
 import Button from 'components/Button';
 import Wallets from 'components/Wallets';
 import WalletCreateModal from 'components/WalletCreateModal';
@@ -22,18 +24,14 @@ export default function WalletsPage({
     <React.Fragment>
       <Page className="wallets-page">
         <PageHeader>
-          <div className="wallets-page__title-wrapper">
+          <Flex>
             <PageTitle>Your wallets</PageTitle>
-            <p className="wallets-page__total">{`${wallets.length} Total`}</p>
-          </div>
+            <Total value={wallets.length} />
+          </Flex>
           <Button onClick={onOpenCreateWalletModal}>Create wallet</Button>
         </PageHeader>
         <PageContent>
-          {
-            wallets.length
-              ? <Wallets wallets={wallets} />
-              : 'You haven\'t wallets yet...'
-          }
+          {wallets.length ? <Wallets wallets={wallets} /> : 'You haven\'t wallets yet...'}
         </PageContent>
       </Page>
       <WalletCreateModal />

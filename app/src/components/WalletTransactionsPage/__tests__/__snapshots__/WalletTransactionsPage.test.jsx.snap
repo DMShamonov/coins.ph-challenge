@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`Wallet\` component should render correctly when \`walletTransactions\` prop is empty array 1`] = `
+<Fragment>
+  <Page
+    className="wallets-page"
+  >
+    <PageHeader>
+      <Flex>
+        <PageTitle>
+          "__LABEL__" transactions
+        </PageTitle>
+        <Total
+          value={0}
+        />
+      </Flex>
+    </PageHeader>
+    <PageContent>
+      You haven't wallet transactions yet...
+    </PageContent>
+  </Page>
+</Fragment>
+`;
+
+exports[`\`Wallet\` component should render correctly with default props 1`] = `
+<Fragment>
+  <Page
+    className="wallets-page"
+  >
+    <PageHeader>
+      <Flex>
+        <PageTitle>
+          "__LABEL__" transactions
+        </PageTitle>
+        <Total
+          value={1}
+        />
+      </Flex>
+    </PageHeader>
+    <PageContent>
+      <WalletTransactions
+        walletId="__ID__"
+        walletTransactions={
+          Array [
+            Object {
+              "date": "2019-04-09T02:56:04.152Z",
+              "entries": Array [
+                Object {
+                  "account": "__WALLET_ID__",
+                  "value": 100000000,
+                },
+              ],
+              "fee": 1000,
+              "id": "__ID__",
+              "pending": false,
+            },
+          ]
+        }
+      />
+    </PageContent>
+  </Page>
+</Fragment>
+`;

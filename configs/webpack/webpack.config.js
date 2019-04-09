@@ -174,7 +174,6 @@ module.exports = (options) => {
         filename: IS_DEVELOPMENT_MODE ? '[name].css' : '[name].[hash].css',
         chunkFilename: IS_DEVELOPMENT_MODE ? '[id].css' : '[id].[hash].css',
       }),
-      new webpack.ContextReplacementPlugin(/moment[/\\]locale/, /(en-gb|ru)/),
       !IS_DEVELOPMENT_MODE && new UglifyjsWebpackPlugin({
         parallel: true,
         cache: true,

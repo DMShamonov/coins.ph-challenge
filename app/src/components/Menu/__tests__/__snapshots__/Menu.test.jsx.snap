@@ -9,6 +9,7 @@ exports[`\`Menu\` component should render correctly with default props 1`] = `
       <NavLink
         activeClassName="menu__link_active"
         className="menu__link"
+        exact={true}
         to="/wallets"
       >
         <Icon

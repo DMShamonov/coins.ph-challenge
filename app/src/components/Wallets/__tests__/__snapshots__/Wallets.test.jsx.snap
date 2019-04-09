@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`Wallets\` component should render correctly when \`wallets\` prop is empty array 1`] = `
+<Table>
+  <TableHeader>
+    <TableRow>
+      <TableCell>
+        ID
+      </TableCell>
+      <TableCell>
+        Label
+      </TableCell>
+      <TableCell
+        width="10%"
+      >
+        Balance
+      </TableCell>
+    </TableRow>
+  </TableHeader>
+  <TableBody />
+</Table>
+`;
+
+exports[`\`Wallets\` component should render correctly with default props 1`] = `
+<Table>
+  <TableHeader>
+    <TableRow>
+      <TableCell>
+        ID
+      </TableCell>
+      <TableCell>
+        Label
+      </TableCell>
+      <TableCell
+        width="10%"
+      >
+        Balance
+      </TableCell>
+    </TableRow>
+  </TableHeader>
+  <TableBody>
+    <Wallet
+      balance={100000000}
+      id="__ID__"
+      key="__ID__"
+      label="__LABEL__"
+    />
+  </TableBody>
+</Table>
+`;

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`Total\` component should render correctly with default props 1`] = `
+<p
+  className="total"
+>
+  10 Total
+</p>
+`;

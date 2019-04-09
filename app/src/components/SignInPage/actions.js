@@ -6,6 +6,8 @@ import ROUTES from 'constants/routes';
 import SIGN_IN_FORM_ACTION_TYPES from 'redux/actionTypes/signInForm';
 import SESSION_ACTION_TYPES from 'redux/actionTypes/session';
 
+const OTP = '0000000';
+
 export function signIn(history) { // eslint-disable-line import/prefer-default-export
   return async function _signIn(dispatch, getState) {
     dispatch({ type: SIGN_IN_FORM_ACTION_TYPES.ON_START_PROCESSING });
@@ -13,7 +15,9 @@ export function signIn(history) { // eslint-disable-line import/prefer-default-e
     const { ui: { signInForm: { login, password } } } = getState();
 
     try {
-      const { access_token } = await api().authenticate({ username: login, password, otp: '0000000' });
+      const { access_token } = await api().authenticate({ username: login, password, otp: OTP });
+
+      await api().unlock({ otp: OTP });
 
       setAccessToken(access_token);
 

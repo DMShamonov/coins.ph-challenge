@@ -18,6 +18,10 @@ const AsyncWalletsPage = DynamicImport({
   loader: () => import('components/WalletsPage' /* webpackChunkName: 'wallets-page' */),
 });
 
+const AsyncWalletTransactionsPage = DynamicImport({
+  loader: () => import('components/WalletTransactionsPage' /* webpackChunkName: 'wallet-transactions-page' */),
+});
+
 export default function Layout(): React.Node {
   return (
     <div className="app">
@@ -34,6 +38,11 @@ export default function Layout(): React.Node {
         <div className="app__content">
           <Switch>
             <Route exact path={ROUTES.WALLETS} component={AsyncWalletsPage} />
+            <Route
+              exact
+              path={ROUTES.WALLET_TRANSACTIONS}
+              component={AsyncWalletTransactionsPage}
+            />
             <Redirect to={ROUTES.WALLETS} />
           </Switch>
         </div>

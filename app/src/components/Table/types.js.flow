@@ -1,0 +1,29 @@
+// @flow
+
+import type { Node } from 'react';
+
+export type TablePropsType = {|
+  className?: string,
+  children: Node,
+|};
+
+export type TableHeaderPropsType = {|
+  className?: string,
+  children: Node,
+|};
+
+export type TableBodyPropsType = {|
+  className?: string,
+  children: Node,
+|};
+
+export type TableRowPropsType = {|
+  className?: string,
+  children: Node,
+|};
+
+export type TableCellPropsType = {|
+  width?: string,
+  className?: string,
+  children?: Node,
+|};

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`TableRow\` component should render correctly with \`className\` prop 1`] = `
+<div
+  className="table__row __CLASSNAME__"
+>
+  __CONTENT__
+</div>
+`;
+
+exports[`\`TableRow\` component should render correctly with default props 1`] = `
+<div
+  className="table__row"
+>
+  __CONTENT__
+</div>
+`;

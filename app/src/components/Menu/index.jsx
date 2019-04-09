@@ -11,7 +11,7 @@ export default function Menu() {
     <nav>
       <ul className="menu">
         <li>
-          <NavLink to={Routes.WALLETS} className="menu__link" activeClassName="menu__link_active">
+          <NavLink exact to={Routes.WALLETS} className="menu__link" activeClassName="menu__link_active">
             <Icon theme="btc-wallet" />
           </NavLink>
         </li>

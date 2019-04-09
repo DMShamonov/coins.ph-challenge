@@ -1,0 +1,8 @@
+// @flow
+
+export type PropsType = {|
+  date: string,
+  fee: number,
+  value: number,
+  pending: boolean,
+|};

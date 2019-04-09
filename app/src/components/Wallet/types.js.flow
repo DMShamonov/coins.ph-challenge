@@ -1,0 +1,7 @@
+// @flow
+
+export type PropsType = {|
+  id: string,
+  label: string,
+  balance: number,
+|};

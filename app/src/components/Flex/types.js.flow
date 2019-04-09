@@ -1,0 +1,8 @@
+// @flow
+
+import type { Node } from 'react';
+
+export type PropsType = {|
+  className?: string,
+  children: Node,
+|};
