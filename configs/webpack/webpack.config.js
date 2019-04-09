@@ -3,7 +3,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const UglifyjsWebpackPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -154,8 +154,37 @@ module.exports = (options) => {
       ],
     },
     optimization: {
+      minimizer: [
+        new TerserPlugin({
+          exclude: /\/node_modules/,
+          parallel: true,
+          terserOptions: {
+            keep_fnames: true, // https://github.com/bitcoinjs/bitcoinjs-lib/issues/998#issuecomment-456184045
+          },
+        }),
+      ],
+      runtimeChunk: 'single',
       splitChunks: {
+        chunks: 'all',
+        maxInitialRequests: Infinity,
+        minSize: 0,
         cacheGroups: {
+          default: false,
+          vendors: false,
+          vendor: {
+            name: 'vendor',
+            chunks: 'all',
+            test: /[\\/]node_modules[\\/]/,
+            priority: 20,
+          },
+          common: {
+            name: 'common',
+            minChunks: 2,
+            chunks: 'all',
+            priority: 10,
+            reuseExistingChunk: true,
+            enforce: true,
+          },
           styles: {
             name: 'styles',
             test: /\.css$/,
@@ -173,16 +202,6 @@ module.exports = (options) => {
       new MiniCssExtractPlugin({
         filename: IS_DEVELOPMENT_MODE ? '[name].css' : '[name].[hash].css',
         chunkFilename: IS_DEVELOPMENT_MODE ? '[id].css' : '[id].[hash].css',
-      }),
-      !IS_DEVELOPMENT_MODE && new UglifyjsWebpackPlugin({
-        parallel: true,
-        cache: true,
-        uglifyOptions: {
-          compress: {
-            drop_console: true,
-            warnings: false,
-          },
-        },
       }),
       !IS_DEVELOPMENT_MODE && new ImageminWebpackPlugin({
         test: /\.(svg|png|jpe?g)$/i,
