@@ -1,12 +1,11 @@
-import api from 'controllers/api';
+import api, { OTP } from 'controllers/api';
 import { setAccessToken } from 'controllers/session';
 import { fetchProfile } from 'controllers/profile';
 
 import ROUTES from 'constants/routes';
 import SIGN_IN_FORM_ACTION_TYPES from 'redux/actionTypes/signInForm';
 import SESSION_ACTION_TYPES from 'redux/actionTypes/session';
-
-const OTP = '0000000';
+import { getErrorMessage } from 'controllers/utilities';
 
 export function signIn(history) { // eslint-disable-line import/prefer-default-export
   return async function _signIn(dispatch, getState) {
@@ -16,8 +15,6 @@ export function signIn(history) { // eslint-disable-line import/prefer-default-e
 
     try {
       const { access_token } = await api().authenticate({ username: login, password, otp: OTP });
-
-      await api().unlock({ otp: OTP });
 
       setAccessToken(access_token);
 
@@ -29,7 +26,7 @@ export function signIn(history) { // eslint-disable-line import/prefer-default-e
 
       dispatch({ type: SIGN_IN_FORM_ACTION_TYPES.ON_RESET_FORM });
     } catch (e) {
-      const error = e?.result?.message || 'An error has been occurred. Try again, please.';
+      const error = getErrorMessage(e) || 'An error has been occurred. Try again, please.';
 
       dispatch({ type: SIGN_IN_FORM_ACTION_TYPES.ON_SET_ERROR, error });
     }

@@ -2,6 +2,8 @@ import api from 'controllers/api';
 
 import WALLET_FORM_ACTION_TYPES from 'redux/actionTypes/walletForm';
 import WALLETS_ACTION_TYPES from 'redux/actionTypes/wallets';
+import MODAL_ACTION_TYPES from 'redux/actionTypes/modal';
+import { getErrorMessage } from 'controllers/utilities';
 
 export function createWallet() { // eslint-disable-line import/prefer-default-export
   return async function _createWallet(dispatch, getState) {
@@ -14,8 +16,9 @@ export function createWallet() { // eslint-disable-line import/prefer-default-ex
 
       dispatch({ type: WALLETS_ACTION_TYPES.ON_ADD, payload: { wallets: [wallet] } });
       dispatch({ type: WALLET_FORM_ACTION_TYPES.ON_RESET_FORM });
+      dispatch({ type: MODAL_ACTION_TYPES.ON_HIDE });
     } catch (e) {
-      const error = e?.result?.message || 'Something went wrong. Try again, please.';
+      const error = getErrorMessage(e) || 'Something went wrong. Try again, please.';
 
       dispatch({ type: WALLET_FORM_ACTION_TYPES.ON_SET_ERROR, error });
     }

@@ -37,8 +37,9 @@ export default function SignInPage({
               label="Login"
               placeholder="Enter your BitGo login"
               value={login}
-              required
               autoFocus
+              required
+              disabled={isFormDisabled}
               onChange={onChangeLogin}
             />
           </FormGroup>
@@ -49,8 +50,9 @@ export default function SignInPage({
               label="Password"
               placeholder="Enter your BitGo password"
               value={password}
-              required
               autoComplete="off"
+              required
+              disabled={isFormDisabled}
               onChange={onChangePassword}
             />
           </FormGroup>

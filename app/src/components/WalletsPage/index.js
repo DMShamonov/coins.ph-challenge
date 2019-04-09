@@ -19,10 +19,7 @@ function mapStateToProps({ data: { wallets } }) {
 function mapDispatchToProps(dispatch) {
   return {
     onOpenCreateWalletModal() {
-      dispatch({
-        type: MODAL_ACTION_TYPES.ON_SHOW,
-        payload: { modal: MODALS.CREATE_WALLET },
-      });
+      dispatch({ type: MODAL_ACTION_TYPES.ON_SHOW, payload: { modal: MODALS.CREATE_WALLET } });
     },
     dispatch,
   };

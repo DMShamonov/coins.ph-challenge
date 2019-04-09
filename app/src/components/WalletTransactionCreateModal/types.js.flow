@@ -1,0 +1,7 @@
+// @flow
+
+export type PropsType = {|
+  isOpen: boolean,
+  walletId: string,
+  onClose: () => void,
+|};

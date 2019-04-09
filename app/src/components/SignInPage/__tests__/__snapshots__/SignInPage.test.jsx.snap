@@ -18,6 +18,7 @@ exports[`\`SignInPage\` component should render correctly when \`hasError\` prop
       <FormGroup>
         <Input
           autoFocus={true}
+          disabled={false}
           label="Login"
           name="login"
           onChange={[MockFunction]}
@@ -30,6 +31,7 @@ exports[`\`SignInPage\` component should render correctly when \`hasError\` prop
       <FormGroup>
         <Input
           autoComplete="off"
+          disabled={false}
           label="Password"
           name="password"
           onChange={[MockFunction]}
@@ -71,6 +73,7 @@ exports[`\`SignInPage\` component should render correctly when \`isFormDisabled\
       <FormGroup>
         <Input
           autoFocus={true}
+          disabled={true}
           label="Login"
           name="login"
           onChange={[MockFunction]}
@@ -83,6 +86,7 @@ exports[`\`SignInPage\` component should render correctly when \`isFormDisabled\
       <FormGroup>
         <Input
           autoComplete="off"
+          disabled={true}
           label="Password"
           name="password"
           onChange={[MockFunction]}
@@ -131,6 +135,7 @@ exports[`\`SignInPage\` component should render correctly with default props 1`]
       <FormGroup>
         <Input
           autoFocus={true}
+          disabled={false}
           label="Login"
           name="login"
           onChange={[MockFunction]}
@@ -143,6 +148,7 @@ exports[`\`SignInPage\` component should render correctly with default props 1`]
       <FormGroup>
         <Input
           autoComplete="off"
+          disabled={false}
           label="Password"
           name="password"
           onChange={[MockFunction]}

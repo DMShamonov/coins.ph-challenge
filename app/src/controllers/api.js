@@ -4,6 +4,8 @@ import { getAccessToken, removeAccessToken } from 'controllers/session';
 
 let _api = new BitGo.BitGo({ accessToken: getAccessToken() });
 
+export const OTP = '0000000';
+
 export async function logout() {
   try {
     await _api.logout();

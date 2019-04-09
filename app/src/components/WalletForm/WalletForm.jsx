@@ -30,9 +30,10 @@ export default function WalletForm({
         <Input
           name="label"
           label="Label"
-          placeholder="Enter wallet label"
+          placeholder="Enter a wallet label"
           value={label}
           required
+          disabled={isFormDisabled}
           onChange={onLabelChange}
         />
       </FormGroup>
@@ -41,9 +42,10 @@ export default function WalletForm({
           type="password"
           name="passphrase"
           label="Passphrase"
-          placeholder="Enter passphrase to encrypt wallet"
+          placeholder="Enter a passphrase to encrypt wallet"
           value={passphrase}
           required
+          disabled={isFormDisabled}
           onChange={onPassphraseChange}
         />
       </FormGroup>

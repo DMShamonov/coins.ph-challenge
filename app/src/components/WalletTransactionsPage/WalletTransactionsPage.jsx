@@ -11,12 +11,15 @@ import {
 import Flex from 'components/Flex';
 import Total from 'components/Total';
 import WalletTransactions from 'components/WalletTransactions';
+import Button from 'components/Button';
+import WalletTransactionCreateModal from 'components/WalletTransactionCreateModal';
 
 import type { PropsType } from './types.js.flow';
 
 export default function WalletTransactionsPage({
   wallet,
   walletTransactions,
+  onOpenCreateWalletTransactionModal,
 }: PropsType): React.Node {
   return (
     <React.Fragment>
@@ -26,6 +29,7 @@ export default function WalletTransactionsPage({
             <PageTitle>{`"${wallet.label}" transactions`}</PageTitle>
             <Total value={walletTransactions.length} />
           </Flex>
+          <Button onClick={onOpenCreateWalletTransactionModal}>Create transaction</Button>
         </PageHeader>
         <PageContent>
           {
@@ -34,6 +38,7 @@ export default function WalletTransactionsPage({
               : 'You haven\'t wallet transactions yet...'}
         </PageContent>
       </Page>
+      <WalletTransactionCreateModal walletId={wallet.id} />
     </React.Fragment>
   );
 }

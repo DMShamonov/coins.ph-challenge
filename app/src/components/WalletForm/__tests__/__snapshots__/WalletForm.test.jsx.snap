@@ -9,20 +9,22 @@ exports[`\`WalletForm\` component should render correctly when \`error\` prop is
   </FormTitle>
   <FormGroup>
     <Input
+      disabled={false}
       label="Label"
       name="label"
       onChange={[MockFunction]}
-      placeholder="Enter wallet label"
+      placeholder="Enter a wallet label"
       required={true}
       value="__LABEL__"
     />
   </FormGroup>
   <FormGroup>
     <Input
+      disabled={false}
       label="Passphrase"
       name="passphrase"
       onChange={[MockFunction]}
-      placeholder="Enter passphrase to encrypt wallet"
+      placeholder="Enter a passphrase to encrypt wallet"
       required={true}
       type="password"
       value="__PASSPHRASE__"
@@ -46,20 +48,22 @@ exports[`\`WalletForm\` component should render correctly when \`error\` prop is
   </FormTitle>
   <FormGroup>
     <Input
+      disabled={false}
       label="Label"
       name="label"
       onChange={[MockFunction]}
-      placeholder="Enter wallet label"
+      placeholder="Enter a wallet label"
       required={true}
       value="__LABEL__"
     />
   </FormGroup>
   <FormGroup>
     <Input
+      disabled={false}
       label="Passphrase"
       name="passphrase"
       onChange={[MockFunction]}
-      placeholder="Enter passphrase to encrypt wallet"
+      placeholder="Enter a passphrase to encrypt wallet"
       required={true}
       type="password"
       value="__PASSPHRASE__"
@@ -86,20 +90,22 @@ exports[`\`WalletForm\` component should render correctly when \`hasError\` prop
   </FormTitle>
   <FormGroup>
     <Input
+      disabled={false}
       label="Label"
       name="label"
       onChange={[MockFunction]}
-      placeholder="Enter wallet label"
+      placeholder="Enter a wallet label"
       required={true}
       value="__LABEL__"
     />
   </FormGroup>
   <FormGroup>
     <Input
+      disabled={false}
       label="Passphrase"
       name="passphrase"
       onChange={[MockFunction]}
-      placeholder="Enter passphrase to encrypt wallet"
+      placeholder="Enter a passphrase to encrypt wallet"
       required={true}
       type="password"
       value="__PASSPHRASE__"
@@ -124,20 +130,22 @@ exports[`\`WalletForm\` component should render correctly when \`isFormDisabled\
   </FormTitle>
   <FormGroup>
     <Input
+      disabled={true}
       label="Label"
       name="label"
       onChange={[MockFunction]}
-      placeholder="Enter wallet label"
+      placeholder="Enter a wallet label"
       required={true}
       value="__LABEL__"
     />
   </FormGroup>
   <FormGroup>
     <Input
+      disabled={true}
       label="Passphrase"
       name="passphrase"
       onChange={[MockFunction]}
-      placeholder="Enter passphrase to encrypt wallet"
+      placeholder="Enter a passphrase to encrypt wallet"
       required={true}
       type="password"
       value="__PASSPHRASE__"
@@ -161,20 +169,22 @@ exports[`\`WalletForm\` component should render correctly with default props 1`]
   </FormTitle>
   <FormGroup>
     <Input
+      disabled={false}
       label="Label"
       name="label"
       onChange={[MockFunction]}
-      placeholder="Enter wallet label"
+      placeholder="Enter a wallet label"
       required={true}
       value="__LABEL__"
     />
   </FormGroup>
   <FormGroup>
     <Input
+      disabled={false}
       label="Passphrase"
       name="passphrase"
       onChange={[MockFunction]}
-      placeholder="Enter passphrase to encrypt wallet"
+      placeholder="Enter a passphrase to encrypt wallet"
       required={true}
       type="password"
       value="__PASSPHRASE__"

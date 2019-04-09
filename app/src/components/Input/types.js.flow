@@ -3,9 +3,10 @@
 export type PropsType = {|
   id?: string,
   type?: (
-    | 'text'
     | 'email'
+    | 'number'
     | 'password'
+    | 'text'
   ),
   name?: string,
   label?: string,

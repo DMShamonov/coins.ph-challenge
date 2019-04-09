@@ -7,6 +7,7 @@ import profile from './profile';
 import signInForm from './signInForm';
 import walletForm from './walletForm';
 import wallets from './wallets';
+import walletTransactionForm from './walletTransactionForm';
 import walletTransactions from './walletTransactions';
 
 const appReducer = combineReducers({
@@ -21,6 +22,7 @@ const appReducer = combineReducers({
     modal,
     signInForm,
     walletForm,
+    walletTransactionForm,
   }),
 });
 

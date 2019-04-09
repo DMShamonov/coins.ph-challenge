@@ -14,11 +14,17 @@ exports[`\`Wallet\` component should render correctly when \`walletTransactions\
           value={0}
         />
       </Flex>
+      <Button>
+        Create transaction
+      </Button>
     </PageHeader>
     <PageContent>
       You haven't wallet transactions yet...
     </PageContent>
   </Page>
+  <Connect(WalletTransactionCreateModal)
+    walletId="__ID__"
+  />
 </Fragment>
 `;
 
@@ -36,6 +42,9 @@ exports[`\`Wallet\` component should render correctly with default props 1`] = `
           value={1}
         />
       </Flex>
+      <Button>
+        Create transaction
+      </Button>
     </PageHeader>
     <PageContent>
       <WalletTransactions
@@ -59,5 +68,8 @@ exports[`\`Wallet\` component should render correctly with default props 1`] = `
       />
     </PageContent>
   </Page>
+  <Connect(WalletTransactionCreateModal)
+    walletId="__ID__"
+  />
 </Fragment>
 `;

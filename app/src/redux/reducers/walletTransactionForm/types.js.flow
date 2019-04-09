@@ -1,0 +1,19 @@
+// @flow
+
+export type StateType = {|
+  address: string,
+  amount: number,
+  walletPassphrase: string,
+  error: string,
+  isProcessing: boolean,
+|};
+
+export type ActionType = {|
+  type: string,
+  payload?: {
+    address?: string,
+    amount?: number,
+    walletPassphrase?: string,
+  },
+  error?: string,
+|};

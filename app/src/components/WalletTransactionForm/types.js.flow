@@ -1,0 +1,14 @@
+// @flow
+
+export type PropsType = {|
+  address: string,
+  amount: number,
+  walletPassphrase: string,
+  error: string,
+  hasError: boolean,
+  isFormDisabled: boolean,
+  onAddressChange: SyntheticInputEvent<HTMLInputElement> => void,
+  onAmountChange: SyntheticInputEvent<HTMLInputElement> => void,
+  onWalletPassphraseChange: SyntheticInputEvent<HTMLInputElement> => void,
+  onSubmit: Event => void,
+|};

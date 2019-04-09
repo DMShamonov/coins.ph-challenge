@@ -1,0 +1,265 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`\`WalletTransactionForm\` component should render correctly when \`error\` prop is set 1`] = `
+<Form
+  onSubmit={[MockFunction]}
+>
+  <FormTitle>
+    Create transaction
+  </FormTitle>
+  <FormGroup>
+    <Input
+      disabled={false}
+      label="Address"
+      name="address"
+      onChange={[MockFunction]}
+      placeholder="Enter a wallet address"
+      required={true}
+      value="__ADDRESS__"
+    />
+  </FormGroup>
+  <FormGroup>
+    <Input
+      disabled={false}
+      label="Amount"
+      name="amount"
+      onChange={[MockFunction]}
+      placeholder="Enter an amount of satoshi"
+      required={true}
+      type="number"
+      value={100000000}
+    />
+  </FormGroup>
+  <FormGroup>
+    <Input
+      autoComplete="off"
+      disabled={false}
+      label="Wallet passphrase"
+      name="walletPassphrase"
+      onChange={[MockFunction]}
+      placeholder="Enter a wallet passphrase"
+      required={true}
+      type="password"
+      value="__WALLET_PASSPHRASE__"
+    />
+  </FormGroup>
+  <Button
+    disabled={false}
+    type="submit"
+  >
+    Create transaction
+  </Button>
+</Form>
+`;
+
+exports[`\`WalletTransactionForm\` component should render correctly when \`error\` prop is set and \`hasError\` prop is \`true\` 1`] = `
+<Form
+  onSubmit={[MockFunction]}
+>
+  <FormTitle>
+    Create transaction
+  </FormTitle>
+  <FormGroup>
+    <Input
+      disabled={false}
+      label="Address"
+      name="address"
+      onChange={[MockFunction]}
+      placeholder="Enter a wallet address"
+      required={true}
+      value="__ADDRESS__"
+    />
+  </FormGroup>
+  <FormGroup>
+    <Input
+      disabled={false}
+      label="Amount"
+      name="amount"
+      onChange={[MockFunction]}
+      placeholder="Enter an amount of satoshi"
+      required={true}
+      type="number"
+      value={100000000}
+    />
+  </FormGroup>
+  <FormGroup>
+    <Input
+      autoComplete="off"
+      disabled={false}
+      label="Wallet passphrase"
+      name="walletPassphrase"
+      onChange={[MockFunction]}
+      placeholder="Enter a wallet passphrase"
+      required={true}
+      type="password"
+      value="__WALLET_PASSPHRASE__"
+    />
+  </FormGroup>
+  <FormError>
+    __ERROR__
+  </FormError>
+  <Button
+    disabled={false}
+    type="submit"
+  >
+    Create transaction
+  </Button>
+</Form>
+`;
+
+exports[`\`WalletTransactionForm\` component should render correctly when \`hasError\` prop is \`true\` 1`] = `
+<Form
+  onSubmit={[MockFunction]}
+>
+  <FormTitle>
+    Create transaction
+  </FormTitle>
+  <FormGroup>
+    <Input
+      disabled={false}
+      label="Address"
+      name="address"
+      onChange={[MockFunction]}
+      placeholder="Enter a wallet address"
+      required={true}
+      value="__ADDRESS__"
+    />
+  </FormGroup>
+  <FormGroup>
+    <Input
+      disabled={false}
+      label="Amount"
+      name="amount"
+      onChange={[MockFunction]}
+      placeholder="Enter an amount of satoshi"
+      required={true}
+      type="number"
+      value={100000000}
+    />
+  </FormGroup>
+  <FormGroup>
+    <Input
+      autoComplete="off"
+      disabled={false}
+      label="Wallet passphrase"
+      name="walletPassphrase"
+      onChange={[MockFunction]}
+      placeholder="Enter a wallet passphrase"
+      required={true}
+      type="password"
+      value="__WALLET_PASSPHRASE__"
+    />
+  </FormGroup>
+  <FormError />
+  <Button
+    disabled={false}
+    type="submit"
+  >
+    Create transaction
+  </Button>
+</Form>
+`;
+
+exports[`\`WalletTransactionForm\` component should render correctly when \`isFormDisabled\` prop is \`true\` 1`] = `
+<Form
+  onSubmit={[MockFunction]}
+>
+  <FormTitle>
+    Create transaction
+  </FormTitle>
+  <FormGroup>
+    <Input
+      disabled={true}
+      label="Address"
+      name="address"
+      onChange={[MockFunction]}
+      placeholder="Enter a wallet address"
+      required={true}
+      value="__ADDRESS__"
+    />
+  </FormGroup>
+  <FormGroup>
+    <Input
+      disabled={true}
+      label="Amount"
+      name="amount"
+      onChange={[MockFunction]}
+      placeholder="Enter an amount of satoshi"
+      required={true}
+      type="number"
+      value={100000000}
+    />
+  </FormGroup>
+  <FormGroup>
+    <Input
+      autoComplete="off"
+      disabled={true}
+      label="Wallet passphrase"
+      name="walletPassphrase"
+      onChange={[MockFunction]}
+      placeholder="Enter a wallet passphrase"
+      required={true}
+      type="password"
+      value="__WALLET_PASSPHRASE__"
+    />
+  </FormGroup>
+  <Button
+    disabled={true}
+    type="submit"
+  >
+    Create transaction
+  </Button>
+</Form>
+`;
+
+exports[`\`WalletTransactionForm\` component should render correctly with default props 1`] = `
+<Form
+  onSubmit={[MockFunction]}
+>
+  <FormTitle>
+    Create transaction
+  </FormTitle>
+  <FormGroup>
+    <Input
+      disabled={false}
+      label="Address"
+      name="address"
+      onChange={[MockFunction]}
+      placeholder="Enter a wallet address"
+      required={true}
+      value="__ADDRESS__"
+    />
+  </FormGroup>
+  <FormGroup>
+    <Input
+      disabled={false}
+      label="Amount"
+      name="amount"
+      onChange={[MockFunction]}
+      placeholder="Enter an amount of satoshi"
+      required={true}
+      type="number"
+      value={100000000}
+    />
+  </FormGroup>
+  <FormGroup>
+    <Input
+      autoComplete="off"
+      disabled={false}
+      label="Wallet passphrase"
+      name="walletPassphrase"
+      onChange={[MockFunction]}
+      placeholder="Enter a wallet passphrase"
+      required={true}
+      type="password"
+      value="__WALLET_PASSPHRASE__"
+    />
+  </FormGroup>
+  <Button
+    disabled={false}
+    type="submit"
+  >
+    Create transaction
+  </Button>
+</Form>
+`;

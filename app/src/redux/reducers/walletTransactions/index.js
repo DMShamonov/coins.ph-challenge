@@ -13,8 +13,8 @@ export default function walletTransactions(
       return action.payload.transactions;
     case WALLET_TRANSACTIONS_ACTION_TYPES.ON_ADD:
       return [
-        ...action.payload.transactions,
         ...state,
+        ...action.payload.transactions,
       ];
     default:
       return state;
