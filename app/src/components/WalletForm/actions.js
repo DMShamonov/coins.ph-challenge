@@ -1,3 +1,5 @@
+import { batch } from 'react-redux';
+
 import api from 'controllers/api';
 
 import WALLET_FORM_ACTION_TYPES from 'redux/actionTypes/walletForm';
@@ -14,9 +16,11 @@ export function createWallet() { // eslint-disable-line import/prefer-default-ex
     try {
       const { wallet: { wallet } } = await api().wallets().createWalletWithKeychains({ label, passphrase, backupXpubProvider: 'keyternal' });
 
-      dispatch({ type: WALLETS_ACTION_TYPES.ON_ADD, payload: { wallets: [wallet] } });
-      dispatch({ type: WALLET_FORM_ACTION_TYPES.ON_RESET_FORM });
-      dispatch({ type: MODAL_ACTION_TYPES.ON_HIDE });
+      batch(() => {
+        dispatch({ type: WALLETS_ACTION_TYPES.ON_ADD, payload: { wallets: [wallet] } });
+        dispatch({ type: WALLET_FORM_ACTION_TYPES.ON_RESET_FORM });
+        dispatch({ type: MODAL_ACTION_TYPES.ON_HIDE });
+      });
     } catch (e) {
       const error = getErrorMessage(e) || 'Something went wrong. Try again, please.';
 

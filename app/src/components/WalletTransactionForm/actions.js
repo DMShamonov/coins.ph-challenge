@@ -1,3 +1,5 @@
+import { batch } from 'react-redux';
+
 import api, { OTP } from 'controllers/api';
 
 import WALLET_TRANSACTION_FORM_ACTION_TYPES from 'redux/actionTypes/walletTransactionForm';
@@ -21,12 +23,14 @@ export function createWalletTransaction(walletId) {
       const { hash } = await wallet.sendCoins({ address, amount, walletPassphrase });
       const transaction = await wallet.getTransaction({ id: hash });
 
-      dispatch({
-        type: WALLET_TRANSACTIONS_ACTION_TYPES.ON_ADD,
-        payload: { transactions: [transaction] },
+      batch(() => {
+        dispatch({
+          type: WALLET_TRANSACTIONS_ACTION_TYPES.ON_ADD,
+          payload: { transactions: [transaction] },
+        });
+        dispatch({ type: WALLET_TRANSACTION_FORM_ACTION_TYPES.ON_RESET_FORM });
+        dispatch({ type: MODAL_ACTION_TYPES.ON_HIDE });
       });
-      dispatch({ type: WALLET_TRANSACTION_FORM_ACTION_TYPES.ON_RESET_FORM });
-      dispatch({ type: MODAL_ACTION_TYPES.ON_HIDE });
     } catch (e) {
       const error = getErrorMessage(e) || 'Something went wrong. Try again, please.';
 
