@@ -6,7 +6,7 @@ exports[`\`WalletTransactionCreateModal\` component should render correctly when
   isOpen={true}
   onClose={[MockFunction]}
 >
-  <Connect(WalletTransactionForm)
+  <ConnectFunction
     walletId="__WALLET_ID__"
   />
 </Modal>
@@ -18,7 +18,7 @@ exports[`\`WalletTransactionCreateModal\` component should render correctly with
   isOpen={false}
   onClose={[MockFunction]}
 >
-  <Connect(WalletTransactionForm)
+  <ConnectFunction
     walletId="__WALLET_ID__"
   />
 </Modal>

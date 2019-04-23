@@ -6,7 +6,7 @@ exports[`\`WalletCreateModal\` component should render correctly when \`isOpen\`
   isOpen={true}
   onClose={[MockFunction]}
 >
-  <Connect(WalletForm) />
+  <ConnectFunction />
 </Modal>
 `;
 
@@ -16,6 +16,6 @@ exports[`\`WalletCreateModal\` component should render correctly with default pr
   isOpen={false}
   onClose={[MockFunction]}
 >
-  <Connect(WalletForm) />
+  <ConnectFunction />
 </Modal>
 `;

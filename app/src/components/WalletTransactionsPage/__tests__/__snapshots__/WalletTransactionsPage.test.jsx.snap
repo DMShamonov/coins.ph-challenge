@@ -22,7 +22,7 @@ exports[`\`Wallet\` component should render correctly when \`walletTransactions\
       You haven't wallet transactions yet...
     </PageContent>
   </Page>
-  <Connect(WalletTransactionCreateModal)
+  <ConnectFunction
     walletId="__ID__"
   />
 </Fragment>
@@ -68,7 +68,7 @@ exports[`\`Wallet\` component should render correctly with default props 1`] = `
       />
     </PageContent>
   </Page>
-  <Connect(WalletTransactionCreateModal)
+  <ConnectFunction
     walletId="__ID__"
   />
 </Fragment>

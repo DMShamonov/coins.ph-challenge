@@ -24,7 +24,7 @@ exports[`\`Wallet\` component should render correctly when \`wallets\` prop is e
       You haven't wallets yet...
     </PageContent>
   </Page>
-  <Connect(WalletCreateModal) />
+  <ConnectFunction />
 </Fragment>
 `;
 
@@ -62,6 +62,6 @@ exports[`\`Wallet\` component should render correctly with default props 1`] = `
       />
     </PageContent>
   </Page>
-  <Connect(WalletCreateModal) />
+  <ConnectFunction />
 </Fragment>
 `;

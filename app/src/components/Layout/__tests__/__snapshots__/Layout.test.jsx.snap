@@ -23,7 +23,7 @@ exports[`\`Layout\` component should render correctly with default props 1`] = `
     <aside
       className="app__aside"
     >
-      <Connect(Account) />
+      <ConnectFunction />
     </aside>
     <div
       className="app__content"
