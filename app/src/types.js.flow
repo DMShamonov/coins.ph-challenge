@@ -17,10 +17,7 @@ export type WalletsType = Array<WalletType>;
 export type WalletTransactionType = {
   id: string,
   date: string,
-  entries: Array<{
-    account: string,
-    value: number,
-  }>,
+  entries: Array<{account: string, value: number}>,
   fee: number,
   pending: boolean,
 };
